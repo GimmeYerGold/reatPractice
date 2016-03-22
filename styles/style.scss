@@ -90,7 +90,7 @@ ul, ol {
  */
 
 img {
-    max-width: 100%;
+    // max-width: 100%;
 }
 body {
     font-family: 'San Francisco', 'Helvetica', 'Trebuchet MS', Arial, sans-serif;
@@ -127,3 +127,98 @@ body {
 /**
  * App code
  */
+
+ .container {
+    background-color: black;
+    min-height: 100vh;
+    
+
+.gameContainer {
+width: 560px;
+margin: auto;
+
+
+    .headline {
+        text-align: center;
+        font-family: monospace;
+        color: #FFC107;
+        font-size: 40px;
+        margin: auto;
+    }    
+
+    .bogContainer {
+        text-align: center;
+        width: 560px;
+        margin: auto;
+
+        .historyContainer {
+        width: 100%;
+        text-align: left;
+        font-family: monospace;
+        font-weight: bold; 
+        font-size: 25px; 
+        transition: all ease 0.5s;
+            p {
+            margin: auto;
+            display: block;   
+            } 
+            .dayCount {
+            color: darkgoldenrod;    
+            display: inline-block;
+
+            }
+            .bodyCount {
+            color: darkgoldenrod;    
+            display: inline-block;
+            float: right;    
+            } 
+            .phraseBox {
+            color: #FF5722;  
+            font-style: italic;
+            font-weight: normal;  
+            margin: auto;
+            }
+        }
+    }
+}
+
+.rowLine {
+    display: block;
+}
+
+.bogPoint {
+    border: 3px olive solid;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 3px;
+
+    img {
+    width: 50px;
+    float: left;
+    position: relative;
+    opacity: 0;
+    }  
+
+    img:active {
+    width: 500px;
+    float: left;
+    position: relative;
+    opacity: 1;
+    }  
+    
+    font-family: serif;
+    .hole {
+        font-size: 25px;
+        font-family: monospace;
+        color: sienna;
+        margin: auto;
+        font-weight: bold;
+    }
+}
+}
+
+ .bogPoint:active {
+        background-color: olive;
+        border: 0px;
+    }
